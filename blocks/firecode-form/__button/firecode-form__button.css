@@ -1,7 +1,7 @@
 .firecode-form__button {
 	color: #111111;
     background-color: #ffffff;
-	border: 1px solid #fff;
+	border: 1px transparent;
 	text-transform: uppercase;
 	padding: 10px 30px;
 	line-height: 25px;
