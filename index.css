@@ -26,5 +26,8 @@
 @import url(./blocks/social-list/__link/social-list__link.css);
 
 
+@import url(./blocks/question/question.css);
+@import url(./blocks/question/_active/question_active.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__img/footer__img.css);
