@@ -1,0 +1,12 @@
+.firecode-form__button {
+	color: #111111;
+    background-color: #ffffff;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	line-height: 25px;
+}
+.firecode-form__button:hover {
+	cursor: pointer;
+	background-color: #e6e6e6;
+}

@@ -1,0 +1,17 @@
+.firecode-form__input {
+	display: block;
+	padding: 10px 12px;
+	background-image: none;
+	background-clip: padding-box;
+	border: none;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	background-color: transparent;
+	color: inherit;
+	height: auto;
+
+	border-bottom: 2px solid #fff;
+}
+.firecode-form__input::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1rem;
+  }

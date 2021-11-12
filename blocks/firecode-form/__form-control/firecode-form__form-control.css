@@ -1,0 +1,13 @@
+.firecode-form__form-control {
+	display: grid;
+	font-weight: bold;
+	line-height: 1.1;
+	display: grid;
+	grid-template-columns: 1em auto;
+	gap: 0.5em;
+}
+
+
+.firecode-form__form-control:focus-within {
+	color: var(--form-control-color);
+}

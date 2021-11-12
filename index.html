@@ -67,27 +67,41 @@
 			</ul>
 		</section>
 
-		<section class="firecode-form__form">
-			<form action="">
-				<input 
-					type="text" 
-					placeholder="Enter a valid email address" 
-					name="email" 
-					type="text"
-				>
-				<input type="text" 
-					placeholder="Enter your Name" 
-					name="name" 
-					type="text"
-				>
-				<textarea 
-					name="" 
-					id="" 
-					cols="30" 
-					rows="10" 
-					placeholder="Enter your Message"
-				></textarea>
-				<button>Представлять на рассмотрение</button>
+		<section class="firecode-form__form-block">
+			<form class="firecode-form__form" action="">
+
+				<div class="firecode-form__row">
+					<label class="firecode-form__label firecode-form__label_questions">Вопросы</label>
+					<div class="firecode-form__row-radio">
+						<label class="firecode-form__form-control"><input class="firecode-form__input-type-radio" type="radio" name="radio" />1</label>
+						<label class="firecode-form__form-control"><input class="firecode-form__input-type-radio" type="radio" name="radio" checked />2</label>
+						<label class="firecode-form__form-control"><input class="firecode-form__input-type-radio" type="radio" name="radio" />3</label>
+						<label class="firecode-form__form-control"><input class="firecode-form__input-type-radio" type="radio" name="radio" />4</label>
+						<label class="firecode-form__form-control"><input class="firecode-form__input-type-radio" type="radio" name="radio" />5</label>
+					</div>
+				</div>
+
+				<div class="firecode-form__row">
+					<label class="firecode-form__label firecode-form__label_questions">Вопрос 2</label>
+					<div class="firecode-form__question">
+						Текст первого вопроса Текст первого вопросаТекст первого вопросаТекст первого вопросаТекст
+						первого вопросаТекст первого вопросаТекст первого вопросаТекст первого вопросаТекст первого
+						вопроса
+					</div>
+				</div>
+				<!-- <div class="firecode-form__row">
+					<label class="firecode-form__label" for="name">Имя</label>
+					<input class="firecode-form__input" type="text" placeholder="Enter your Name" name="name"
+						type="text" id="name">
+				</div> -->
+				<div class="firecode-form__row">
+					<label class="firecode-form__label" for="textarea">Сообщение</label>
+					<textarea class="firecode-form__textarea" name="" id="textarea" cols="30" rows="6"
+						placeholder="Enter your Message"></textarea>
+				</div>
+				<div class="firecode-form__row">
+					<button class="firecode-form__button">Отправить</button>
+				</div>
 			</form>
 		</section>
 	</main>
