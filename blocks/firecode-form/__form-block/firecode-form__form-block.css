@@ -1,6 +1,9 @@
+.firecode-form__form-block {
+    margin: 30px;
+}
 
 @media screen and (min-width: 768px) {
-	.firecode-form__form-block {
-		width: 50%;
-	}
+    .firecode-form__form-block {
+        width: 50%;
+    }
 }

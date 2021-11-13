@@ -1,8 +1,11 @@
 .firecode-form__description {
-	padding-right: 90px;
+    /* padding-right: 90px; */
+    margin: 30px;
 }
+
 @media screen and (min-width: 768px) {
-	.firecode-form__description {
-		width: 50%;
-	}
+    .firecode-form__description {
+        width: 50%;
+        padding-right: 90px;
+    }
 }

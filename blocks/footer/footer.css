@@ -1,14 +1,15 @@
 .footer {
-	background-color: #8d89c9;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	max-height: 282px;
-	min-width: 320px;
-	padding: 0 20px;
+    background-color: #8d89c9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    max-height: 282px;
+    min-width: 320px;
 }
+
 @media screen and (min-width: 570px) {
-	.footer {
-		max-height: 282px;
-	}
+    .footer {
+        max-height: 282px;
+        padding: 0 20px;
+    }
 }
