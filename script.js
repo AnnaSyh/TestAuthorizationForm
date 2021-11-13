@@ -11,8 +11,10 @@ function switchQuestions(evt) {
     const dataNumCurrent = evt.target.getAttribute('data-num');
     const questionCurrentClass = '.question-' + dataNumCurrent;
     const questionCurrent = document.querySelector(questionCurrentClass);
+
     for (let i = 0; i <= questions.length - 1; i++) {
         questions[i].style.display = "none";
     }
     questionCurrent.style.display = "block";
+
 }
