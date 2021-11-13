@@ -1,17 +1,18 @@
 "use strict";
 
-const radioButton = document.querySelector('.firecode-form__form-control');
+const radioButtons = document.querySelectorAll('.firecode-form__form-control');
+const questions = document.querySelectorAll('.question');
 
-console.log('radioButton = ',radioButton);
-
-radioButton.addEventListener('click', switchQuestions)
+for (let i = 0; i <= radioButtons.length - 1; i++) {
+    radioButtons[i].addEventListener('click', switchQuestions);
+}
 
 function switchQuestions(evt) {
-	const labelCurent = evt.target;
-
-	console.log('labelCurent = ',labelCurent);
-
-	const questionCurentNumber = evt.target.getAttribute('data-num');
-
-	console.log('questionCurentNumber = ', questionCurentNumber);
+    const dataNumCurrent = evt.target.getAttribute('data-num');
+    const questionCurrentClass = '.question-' + dataNumCurrent;
+    const questionCurrent = document.querySelector(questionCurrentClass);
+    for (let i = 0; i <= questions.length - 1; i++) {
+        questions[i].style.display = "none";
+    }
+    questionCurrent.style.display = "block";
 }

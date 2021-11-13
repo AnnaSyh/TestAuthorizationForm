@@ -27,7 +27,7 @@
 
 
 @import url(./blocks/question/question.css);
-@import url(./blocks/question/_active/question_active.css);
+@import url(./blocks/question/_checked/question_checked.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__img/footer__img.css);
