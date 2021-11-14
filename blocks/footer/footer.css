@@ -1,5 +1,12 @@
 .footer {
     background-color: #8d89c9;
     position: relative;
-    min-height: 282px;
+    height: auto;
+    min-height: 170px;
+}
+
+@media screen and (min-width:526px) {
+    .footer {
+        min-height: 282px;
+    }
 }
