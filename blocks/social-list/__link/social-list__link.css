@@ -1,6 +1,7 @@
 .social-list__link {
-	width: 41px;
-	height: 41px;
-	display: flex;
-	fill: #fff;
+    border: 1px solid red;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    fill: #fff;
 }

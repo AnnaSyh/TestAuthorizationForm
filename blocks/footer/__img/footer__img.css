@@ -1,4 +1,5 @@
 .footer__img {
+    border: 1px solid red;
     position: absolute;
     left: 0;
     top: -45px;
