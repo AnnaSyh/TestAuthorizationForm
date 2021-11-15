@@ -26,8 +26,7 @@
 @import url(./blocks/social-list/__link/social-list__link.css);
 
 
-@import url(./blocks/question/question.css);
-@import url(./blocks/question/_checked/question_checked.css);
+/* @import url(./blocks/question/question.css); */
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__img/footer__img.css);
