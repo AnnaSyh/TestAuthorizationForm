@@ -2,8 +2,6 @@
     background-color: #8d89c9;
     position: relative;
     height: auto;
-    /* min-height: 170px;
-    min-height: 282px; */
 }
 
 @media screen and (min-width:526px) {

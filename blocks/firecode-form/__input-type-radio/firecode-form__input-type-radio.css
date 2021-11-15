@@ -31,8 +31,3 @@
 .firecode-form__input-type-radio[type="radio"]:checked::before {
     transform: scale(1);
 }
-
-/* .firecode-form__input-type-radio[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid currentColor;
-    outline-offset: max(2px, 0.15em);
-} */
