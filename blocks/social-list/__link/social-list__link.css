@@ -2,6 +2,7 @@
     border: 1px solid red;
     width: 41px;
     height: 41px;
-    display: flex;
+    /* display: flex; */
+    display: block;
     fill: #fff;
 }
