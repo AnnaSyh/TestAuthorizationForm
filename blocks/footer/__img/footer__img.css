@@ -1,6 +1,5 @@
 .footer__img {
-    border: 1px solid red;
-    position: absolute;
+    position: relative;
     left: 0;
     top: -45px;
     width: 100%;
@@ -10,6 +9,7 @@
 
 @media screen and (min-width:526px) {
     .footer__img {
+        position: absolute;
         width: auto;
         height: calc(100% + 45px);
         left: calc((100% - 522px)/2);
