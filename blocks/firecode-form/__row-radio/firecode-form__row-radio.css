@@ -1,4 +1,2 @@
 .firecode-form__row-radio {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
 }

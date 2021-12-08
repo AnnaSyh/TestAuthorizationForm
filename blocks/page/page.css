@@ -1,19 +1,15 @@
 .page {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    background-color: #aca9d9;
-    color: #fff;
     box-sizing: border-box;
 
-    /* display: flex;  
-    flex-direction: column; */
     height: 100vh;
     min-width: 340px;
 }
 @media screen and (min-width: 768px) {
     .page {
-        display: flex;  
+        display: flex;
         flex-direction: column;
     }
 }

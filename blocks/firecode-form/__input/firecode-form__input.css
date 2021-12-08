@@ -9,9 +9,10 @@
 	color: inherit;
 	height: auto;
 
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #000;
 }
 .firecode-form__input::placeholder {
-	color: rgba(255, 255, 255, 0.5);
+	color: #000;
+	opacity: 0.5;
 	font-size: 1rem;
-  }
+}
