@@ -24,6 +24,9 @@
 /* @import url(./blocks/question/question.css); */
 
 @import url(./blocks/header/header.css);
+@import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/logo/logo.css);
+@import url(./blocks/container/container.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__img/footer__img.css);

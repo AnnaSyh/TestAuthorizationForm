@@ -1,0 +1,7 @@
+.header__title {
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	font-size: 40px;
+	text-transform: uppercase;
+}
