@@ -29,6 +29,13 @@ const checkInputValidity = (inputElement, { inputErrorClass, errorClass }) => {
 	}
 };
 
+const checkInputInfo = (inputElement) => {
+	if (inputElement.classList.contains('has-info')) {
+		const inputElementInfo = inputElement.closest('.firecode-form__row');
+		inputElementInfo.querySelector('.firecode-form__info').classList.remove('firecode-form__info');
+	}
+};
+
 
 
 const setEventListeners = (formElement, { inputSelector, submitButtonSelector,
@@ -43,6 +50,9 @@ const setEventListeners = (formElement, { inputSelector, submitButtonSelector,
 			checkInputValidity(inputElement, { inputErrorClass, errorClass });
 			// чтобы проверять его при изменении любого из полей
 			toggleButtonState(inputList, buttonElement, inactiveButtonClass);
+		});
+		inputElement.addEventListener('click', function () {
+			checkInputInfo(inputElement);
 		});
 	});
 };

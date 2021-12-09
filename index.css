@@ -9,13 +9,12 @@
 @import url(./blocks/firecode-form/__lead/firecode-form__lead.css);
 
 @import url(./blocks/firecode-form/__form/firecode-form__form.css);
+@import url(./blocks/firecode-form/__info/firecode-form__info.css);
 @import url(./blocks/firecode-form/__img/firecode-form__img.css);
 @import url(./blocks/firecode-form/__row/firecode-form__row.css);
-@import url(./blocks/firecode-form/__row-radio/firecode-form__row-radio.css);
 @import url(./blocks/firecode-form/__label/firecode-form__label.css);
 @import url(./blocks/firecode-form/__label/_questions/firecode-form__label_questions.css);
 @import url(./blocks/firecode-form/__input/firecode-form__input.css);
-@import url(./blocks/firecode-form/__input-type-radio/firecode-form__input-type-radio.css);
 @import url(./blocks/firecode-form/__button/firecode-form__button.css);
 @import url(./blocks/firecode-form/__form-control/firecode-form__form-control.css);
 @import url(./blocks/firecode-form/__input-error/firecode-form__input.css);
