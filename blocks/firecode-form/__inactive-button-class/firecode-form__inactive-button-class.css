@@ -1,5 +1,5 @@
 .firecode-form__inactive-button-class {
-	background-color: thistle;
+	opacity: 0.5;
 }
 .firecode-form__inactive-button-class:hover {
 	cursor: text;

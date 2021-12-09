@@ -8,3 +8,13 @@ export const configData = {
 	inputErrorClass: 'firecode-form__input-error',
 	errorClass: 'firecode-form__text-error'
 }
+
+
+export const configDataPass = {
+	formSelector: '.firecode-form__form',
+	passwordSelector: '.firecode-form__input_password',
+	submitButtonSelector: '.firecode-form__button',
+	disableButtonClass: 'firecode-form__inactive-button-class',
+	inputErrorClass: 'firecode-form__input-error',
+	errorClass: 'firecode-form__text-error'
+}

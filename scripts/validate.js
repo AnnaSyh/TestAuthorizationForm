@@ -1,6 +1,9 @@
 'use strict'
 
 import { configData } from "./configData.js";
+import { configDataPass } from "./configData.js";
+
+console.log('configDataPass = ', configDataPass);
 
 const showInputError = (inputElement, { inputErrorClass, errorClass }) => {
 	const errorElement = inputElement.closest('form').querySelector(`.${inputElement.id}-error`);
@@ -68,12 +71,6 @@ const hasInvalidInput = (inputList) => {
 	})
 };
 
-const hasEmptyInput = (inputList) => {
-	return inputList.some((inputElement) => {
-		return inputElement.validity.valueMissing;
-	})
-};
-
 const toggleButtonState = (inputList, buttonElement, inactiveButtonClass) => {
 	const isFormValid = hasInvalidInput(inputList);
 	buttonElement.classList.toggle(inactiveButtonClass, isFormValid);
@@ -81,3 +78,49 @@ const toggleButtonState = (inputList, buttonElement, inactiveButtonClass) => {
 };
 
 enableValidation(configData);
+
+
+
+// Функция активации валидации пароля.
+const enablePasswordValidation = (config) => {
+	// извлекаем данные из конфига.
+	const { formSelector, passwordSelector, submitButtonSelector, disableButtonClass } = config;
+	// находим элемент формы по значению из formSelector из конфига.
+	const form = document.querySelector(formSelector);
+	// находим все поля формы
+	const formList = Array.from(document.querySelectorAll(passwordSelector));
+
+	console.log('enablePasswordValidation formList = ', formList);
+
+	// находим элемент кнопки по значению из submitButtonSelector из конфига.
+	const formSubmitButton = document.querySelector(submitButtonSelector);
+	// С помощью деструктуризации извлекаем поля пароля из NodeList
+	const [passwordInput, passwordInput2] = document.querySelectorAll(passwordSelector);
+
+	[passwordInput, passwordInput2].forEach(input => {
+		// Навешиваем слушатель на ввод в поля пароля.
+		input.addEventListener('input', () => {
+			console.log('password input = ', input);
+			// Если значения в пароле не совпадают, то делаем поле passwordInput2 невалидным с помощью setCustomValidity
+			if (passwordInput.value !== passwordInput2.value) {
+				passwordInput2.setCustomValidity('Пароли в полях не совпадают');
+			} else {
+				passwordInput2.setCustomValidity('');
+			}
+			/*  Метод checkInputValidity либо отображает, либо скрывает текст ошибки.
+				Данный метод мы вызываем здесь, чтобы ввод в passwordInput влиял на отображение ошибки для passwordInput2
+				В ином случае изменение в поле passwordInput не будет обновлять статус ошибки в поле passwordInput2
+			*/
+
+			checkInputValidity(input, passwordInput2, config);
+
+			toggleButtonState(
+				formList,
+				formSubmitButton,
+				disableButtonClass
+			)
+		})
+	})
+}
+
+enablePasswordValidation(configDataPass);

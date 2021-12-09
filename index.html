@@ -24,7 +24,7 @@
 
     </header>
 
-    <main class="container">
+    <main class="container firecode-form">
         <section class="firecode-form__description">
             <p class="firecode-form__lead">
                 Пишите письма, сохраняйте и делитесь файлами, слушайте музыку и смотрите фильмы с народной подпиской
@@ -48,7 +48,7 @@
                            type="text"
                            required
                            minlength="2"
-                           maxlength="30">
+                           maxlength="255">
                     <span class="firecode-form__input-error title-input-error"></span>
 
                 </div>
@@ -60,7 +60,7 @@
                            type="text"
                            required
                            minlength="2"
-                           maxlength="30">
+                           maxlength="255">
                     <span class="firecode-form__input-error subtitle-input-error"></span>
 
                 </div>
@@ -71,7 +71,7 @@
                            name="login"
                            type="text"
                            required
-                           minlength="2"
+                           minlength="4"
                            maxlength="30">
                     <span class="firecode-form__input-error login-input-error"></span>
 
@@ -83,21 +83,21 @@
                            name="password"
                            type="password"
                            required
-                           minlength="2"
-                           maxlength="6">
+                           minlength="8"
+                           maxlength="16">
                     <span class="firecode-form__input-error password-input-error"></span>
 
                 </div>
                 <div class="firecode-form__row">
                     <input placeholder="подтверждение пароля"
                            id="password2-input"
-                           class="firecode-form__input firecode-form__input_password2"
+                           class="firecode-form__input firecode-form__input_password firecode-form__input_password2"
                            name="password2"
                            type="password"
                            required
-                           minlength="2"
-                           maxlength="6">
-                    <span class="firecode-form__input-error password2-input-error"></span>
+                           minlength="8"
+                           maxlength="16">
+                    <span class="firecode-form__input-error password2-input-error error-message"></span>
 
                 </div>
                 <div class="firecode-form__row">
@@ -107,7 +107,8 @@
                            name="phone"
                            type="tel"
                            pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                           required>
+                           required
+                           minlength="11">
                     <span class="firecode-form__input-error phone-input-error"></span>
 
                 </div>
