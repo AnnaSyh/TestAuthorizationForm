@@ -41,9 +41,10 @@
                 <h1 class="firecode-form__title">рЕГИСТРАЦИЯ</h1>
 
                 <div class="firecode-form__row">
+                    <!-- pattern="[A-Za-zА-Яа-яЁё]{2,255}" -->
                     <input placeholder="имя"
                            id="title-input"
-                           class="firecode-form__input firecode-form__input_title"
+                           class="firecode-form__input firecode-form__input_title input-text"
                            name="title"
                            type="text"
                            required
@@ -83,8 +84,13 @@
                            name="password"
                            type="password"
                            required
+                           pattern="[A-Za-z0-9]{8,16}"
                            minlength="8"
                            maxlength="16">
+                    <span class="firecode-form__info">
+                        Пароль должен состоять не менее, чем из 8 символов, и содержать
+                        буквы латинского алфавита, цифры и хотя бы 1 спецсимвол
+                    </span>
                     <span class="firecode-form__input-error password-input-error"></span>
 
                 </div>
@@ -95,6 +101,7 @@
                            name="password2"
                            type="password"
                            required
+                           pattern="[A-Za-z0-9]{8,16}"
                            minlength="8"
                            maxlength="16">
                     <span class="firecode-form__input-error password2-input-error error-message"></span>
