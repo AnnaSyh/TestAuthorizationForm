@@ -1,0 +1,11 @@
+.header__container {
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+	.header__container {
+		flex-direction: row;
+	}
+}

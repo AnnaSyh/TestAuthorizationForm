@@ -9,6 +9,7 @@
 @import url(./blocks/firecode-form/__lead/firecode-form__lead.css);
 
 @import url(./blocks/firecode-form/__form/firecode-form__form.css);
+@import url(./blocks/firecode-form/__img/firecode-form__img.css);
 @import url(./blocks/firecode-form/__row/firecode-form__row.css);
 @import url(./blocks/firecode-form/__row-radio/firecode-form__row-radio.css);
 @import url(./blocks/firecode-form/__label/firecode-form__label.css);
@@ -23,10 +24,12 @@
 
 /* @import url(./blocks/question/question.css); */
 
-@import url(./blocks/header/header.css);
-@import url(./blocks/header/__title/header__title.css);
 @import url(./blocks/logo/logo.css);
 @import url(./blocks/container/container.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__container/header__container.css);
+@import url(./blocks/header/__title/header__title.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__img/footer__img.css);
