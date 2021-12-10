@@ -4,5 +4,11 @@
 	background-image: url("../../images/photo_fon1.jpg");
 	background-repeat: repeat-x;
 	background-position: center;
-	padding: 100px;
+	padding: 30px 0px;
+}
+
+@media screen and (min-width: 768px) {
+	.header {
+		padding: 100px 0;
+	}
 }

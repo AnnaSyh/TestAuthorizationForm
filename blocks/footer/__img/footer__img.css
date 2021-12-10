@@ -7,11 +7,11 @@
     object-fit: cover;
 }
 
-@media screen and (min-width:526px) {
+@media screen and (min-width: 526px) {
     .footer__img {
         position: absolute;
         width: auto;
         height: calc(100% + 45px);
-        left: calc((100% - 522px)/2);
+        left: calc((100% - 266px) / 2);
     }
 }
