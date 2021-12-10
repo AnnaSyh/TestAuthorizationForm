@@ -11,8 +11,8 @@
 
 @media screen and (min-width: 500px) {
 	.header__title {
-		width: calc(100% - 300px);
-		text-align: left;
+		/* width: calc(100% - 300px);
+		text-align: left; */
 		font-size: 30px;
 		margin-bottom: 0;
 	}

@@ -1,4 +1,8 @@
 .header {
 	display: flex;
 	background-color: #d3413f;
+	background-image: url("../../images/photo_fon1.jpg");
+	background-repeat: repeat-x;
+	background-position: center;
+	padding: 100px;
 }
