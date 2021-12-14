@@ -18,4 +18,4 @@ JS
 
 ##### Просмотр:
 
-https://annasyh.github.io/FirecodForma/index.html
+https://annasyh.github.io/TestAuthorizationForm/
